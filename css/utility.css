@@ -1,0 +1,250 @@
+.btn-primary{
+    background-color: var(--Primary-color);
+    color:var(--text-light);
+    text-decoration: none;
+    padding: 12px 42px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+
+}
+.btn-primary:hover{
+    background-color: var(--Primary-hover);
+}
+
+.btn-Secondary{
+    color:var(--text-dark);
+    text-decoration: none;
+    padding: 9.3px 35px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: .3s ease-in-out;
+    outline: 2px solid var(--text-dark); 
+
+}
+.btn-Secondary:hover{
+    background-color: var(--Primary-hover);
+    outline: 3px solid var(--Primary-hover); 
+    color:var(--text-light);
+
+}
+
+.btn-small{
+    color:var(--text-light);
+    background-color: var(--text-dark);
+    text-decoration: none;
+    padding: 8px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .3s ease-in-out;
+    outline-style: none; 
+
+}
+.btn-small:hover{
+    background-color: var(--Primary-hover);
+    outline-color: var(--Primary-hover);
+    outline-style: none;
+    color:var(--text-light);
+    cursor: pointer;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+
+.fade-in-bottom {
+    -webkit-animation: fade-in-bottom 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in-bottom 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.fade-in {
+    -webkit-animation: fade-in .6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in .6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.fade-out {
+    -webkit-animation: fade-out 1s ease-out both;
+            animation: fade-out 1s ease-out both;
+}
+
+@-webkit-keyframes fade-in-bottom {
+0% {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  opacity: 0;
+}
+100% {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+}
+@keyframes fade-in-bottom {
+0% {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  opacity: 0;
+}
+100% {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+}
+
+@-webkit-keyframes fade-in {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+@keyframes fade-in {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
+@-webkit-keyframes fade-out {
+0% {
+  opacity: 1;
+}
+100% {
+  opacity: 0;
+}
+}
+@keyframes fade-out {
+0% {
+  opacity: 1;
+}
+100% {
+  opacity: 0;
+}
+}
+
+
+.hide{
+    display: none;
+}
+
+.w-100{
+  width: 100%;
+}
+
+.flex{
+  display: flex;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.flex-col{
+  flex-direction: column;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.gap-10{
+  gap: 10px;
+}
+.gap-20{
+  gap: 20px;
+}
+.gap-30{
+  gap: 30px;
+}
+.gap-40{
+  gap: 40px;
+}
+.text-balanced{
+  text-wrap: balance;
+}
+
+.title-effect{
+  position: relative;
+  z-index: 1;
+}
+
+.title-effect::before{
+  content: "";
+  background-color: #6c3ed480;
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  bottom: 10px;
+  z-index: -1;
+}
+
+
+.section-title{
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.section-desc{
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+}
+
+
+/* Only PC */
+@media(min-width:678px){
+    .hide-pc{
+        display: none !important;
+    }
+}
+
+
+
+/* Only Mobile */
+@media(max-width:678px){
+    .hide-mob{
+        display: none;
+    }
+    .btn-primary{
+        padding: 8.5px 25px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .btn-Secondary{
+        padding: 5px 25px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .section-desc{
+      text-align: center;
+      margin-top: 15px;
+  }
+  .mob-flex-col{
+    flex-direction: column;
+  }
+  .mob-items-center{
+    align-items: center;
+  }
+  .mob-width-full{
+    width: 100%;
+  }
+  .mob-flex-wrap{
+    flex-wrap: wrap;
+  }
+}
+
